@@ -1,0 +1,45 @@
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 350px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.main {
+    font-family: 'Tahoma', sans-serif;
+    font-size: 18px;
+    align-content: center;
+    text-align: center;
+}
+
+.title {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.translate {
+    font-style: italic;
+}
+
+.emoji {
+    font-size: 128px;
+}
+
+.title {
+}
+
+.play {
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}

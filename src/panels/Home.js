@@ -1,20 +1,32 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Panel, ListItem, Button, Group, Div, Avatar, PanelHeader } from '@vkontakte/vkui';
+import { Panel, List, Cell, Group, Div, PanelHeader } from '@vkontakte/vkui';
+
+import menu from '../menu';
 
 const Home = ({ id, go }) => (
-	<Panel id={id}>
-		<PanelHeader>Example</PanelHeader>
-		<Group title="Navigation Example">
-			<Div>
-			</Div>
-		</Group>
-	</Panel>
+  <Panel id={id}>
+    <PanelHeader>
+      Emoji Learn <span role="img">📚</span>
+    </PanelHeader>
+
+    <Div>
+      <Group title="Выберите тему">
+        <List>
+          {menu.map(item => (
+            <Cell key={item.title} onClick={go('emojis', item)} expandable>
+              {item.title}
+            </Cell>
+          ))}
+        </List>
+      </Group>
+    </Div>
+  </Panel>
 );
 
 Home.propTypes = {
-	id: PropTypes.string.isRequired,
-	go: PropTypes.func.isRequired,
+  id: PropTypes.string.isRequired,
+  go: PropTypes.func.isRequired,
 };
 
 export default Home;
