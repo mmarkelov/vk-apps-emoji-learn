@@ -11,10 +11,10 @@ import {
 import Icon28ChevronBack from '@vkontakte/icons/dist/28/chevron_back';
 import Icon24Back from '@vkontakte/icons/dist/24/back';
 
-// TODO Replace with module system
-import Swiper from 'react-id-swiper/lib/ReactIdSwiper.full';
+import Swiper from 'react-id-swiper';
 
 import 'react-id-swiper/src/styles/css/swiper.css';
+import { Virtual, EffectCoverflow } from 'swiper/dist/js/swiper.esm.js';
 import './Emojis.css';
 
 import EMOJIS from '../emojis';
@@ -22,6 +22,7 @@ import EMOJIS from '../emojis';
 import Card from '../components/Card';
 
 const params = {
+  modules: [Virtual, EffectCoverflow],
   effect: 'coverflow',
   // grabCursor: true,
   centeredSlides: true,
