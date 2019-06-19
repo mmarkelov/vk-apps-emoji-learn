@@ -6,6 +6,7 @@ import food from './food';
 import transport from './transport';
 import activities from './activities';
 import weather from './weather';
+import plants from './plants';
 
 export default {
   countries,
@@ -16,4 +17,5 @@ export default {
   transport,
   activities,
   weather,
+  plants
 };

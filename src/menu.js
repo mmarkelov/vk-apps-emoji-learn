@@ -7,4 +7,5 @@ export default [
   { title: 'Транспорт 🚂', value: 'transport' },
   { title: 'Деятельность ⚽', value: 'activities' },
   { title: 'Погода 🌦', value: 'weather' },
+  { title: 'Растения 🌿', value: 'plants' },
 ];
