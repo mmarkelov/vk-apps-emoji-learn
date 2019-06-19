@@ -21,12 +21,12 @@ const Home = ({ id, go, user }) => (
 
     <Div>
       {user && (
-        <Group title="User Data Fetched with VK Connect">
+        <Group>
           <ListItem
             before={user.photo_200 ? <Avatar src={user.photo_200} /> : null}
             description={user.city && user.city.title ? user.city.title : ''}
           >
-            {`Рады видеть тебя, ${user.first_name} ${user.last_name}`}
+            {`Рады видеть тебя, ${user.first_name} ${user.last_name}! 🙌`}
           </ListItem>
         </Group>
       )}
