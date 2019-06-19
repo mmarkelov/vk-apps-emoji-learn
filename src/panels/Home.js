@@ -26,7 +26,7 @@ const Home = ({ id, go, user }) => (
             before={user.photo_200 ? <Avatar src={user.photo_200} /> : null}
             description={user.city && user.city.title ? user.city.title : ''}
           >
-            {`Рады видеть тебя, ${user.first_name} ${user.last_name}! 🙌`}
+            {`Рады видеть тебя, ${user.first_name}!`}
           </ListItem>
         </Group>
       )}
