@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/vk-apps-emoji-learn/precache-manifest.efe9ecaf84fe21e48eb4b59f054277ce.js"
+  "/vk-apps-emoji-learn/precache-manifest.949113504f06ec7b1d1073b1871921b0.js"
 );
 
 workbox.clientsClaim();
